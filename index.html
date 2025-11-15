@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JV — Gerenciador de Projetos</title>
+    <meta name="theme-color" content="#0d0d0d">
+
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="icon" href="icon-192.png">
+</head>
+<body>
+    <header>
+        <h1>JV Projetos</h1>
+        <button id="addProjectBtn">+ Novo Projeto</button>
+    </header>
+
+    <main>
+        <section id="projectList" class="cards-grid"></section>
+    </main>
+
+    <!-- Modal -->
+    <div id="modal" class="modal hidden">
+        <div class="modal-content">
+            <h2>Novo Projeto</h2>
+            <input type="text" id="titleInput" placeholder="Título">
+            <textarea id="descInput" placeholder="Descrição"></textarea>
+            <button id="saveProject">Salvar</button>
+            <button id="closeModal">Cancelar</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
